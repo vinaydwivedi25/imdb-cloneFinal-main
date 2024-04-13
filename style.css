@@ -1,0 +1,241 @@
+*{
+    margin:0px;
+}
+
+
+
+
+
+
+
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* .navigation-bar */
+
+
+.search-and-searchIcon {
+    position: relative;
+}
+
+.autocomplete-container {
+    position: absolute;
+    top: calc(100% + 3px); /* Adjust this value as needed */
+    left: 40%;
+    transform: translateX(-50%);
+    width: 80%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 999; /* Ensure autocomplete is on top of other elements */
+    display: none;
+    color:black;
+}
+
+.autocomplete-item {
+    padding: 5px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.autocomplete-item:hover {
+    background-color: #bab4b4;
+}
+
+.navigation-bar{
+    width: 100vw;
+    height:60px;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+   
+}
+.home{
+    color:rgb(22, 20, 20);
+    font-weight: 700;
+    font-size: 18px;
+    margin:10px;
+    background-color:  rgb(247, 191, 5);
+    height: 35px;
+    width:60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.home:hover{
+    color:white;
+}
+.nav-logo{
+
+   
+    height:50px;
+    width:auto;
+    width:80px;
+}
+
+
+.logo{
+ 
+   
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 50px;
+    width:80px;
+}
+
+.search-and-searchIcon{
+    margin-left: 25px;
+    display: flex;
+    color:white;
+    align-items: center;
+}
+
+.favourite:hover{
+    color: rgb(247, 191, 5);
+}
+
+.searchInput{
+    height: 30px;
+    width: 400px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    border:none;
+}
+.search-icon{
+   
+  
+     height:32px;
+    width:40px;
+
+
+    background-color: rgb(247, 191, 5);
+
+    display: flex;
+    color:white;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+   
+}
+
+
+.favourite {
+    height: 32px;
+    width: 40px;
+    font-size: 20px;
+   margin-left: 15px;
+  /* background-color: darkorange; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+/* movie section/ */
+.backgroundMoviesCard {
+    background-color: #cccc;
+    width: 90%;
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+.outer-card {
+    height: 400px;
+    width: 20%;
+
+    margin-left: 20px;
+    margin-top: 70px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    background-color: rgb(255, 255, 255); 
+    position: relative; /* Add relative positioning */
+}
+
+.card {
+    height: 100%; /* Fill all the space of the outer card */
+    width: 100%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative; /* Add relative positioning */
+}
+
+.btn {
+    width: 80%;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  
+    margin-bottom: 10px;
+    position: absolute; /* Position the button absolutely */
+    bottom: -20px; /* Adjust the button's position */
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    z-index: 3;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+/* big card */
+
+.big-card{
+
+    display: flex;
+    justify-content:space-between;
+}
+
+.details{
+    
+    max-width: 300px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-container{
+    display: flex;
+    align-items: center;
+}
+
+.autocomplete-item .poster-small img {
+    height: 35px;
+    width: 30px;
+    margin-right: 10px;
+}
